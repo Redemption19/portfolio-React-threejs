@@ -169,6 +169,26 @@ body {
   );
 }
 
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Size of the circle */
+  height: 50px;
+  border-radius: 50%; /* Circular shape */
+  background-color: #333; /* Default background color */
+  margin: 0 10px; /* Space between icons */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+
+.social-icon:hover {
+  background-color: #050505; /* Lighter black on hover */
+}
+
+
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
