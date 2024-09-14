@@ -1,15 +1,12 @@
 import emailjs from "@emailjs/browser";
-import { useRef, useState } from "react";
-
+import { useRef, useState, useEffect } from "react";
 import useAlert from "../hooks/useAlert.js";
 import Alert from "../components/Alert.jsx";
 
 const Contact = () => {
   const formRef = useRef();
-
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
-
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const handleChange = ({ target: { name, value } }) => {
@@ -33,7 +30,6 @@ const Contact = () => {
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
-
       .then(
         () => {
           setLoading(false);
@@ -44,13 +40,9 @@ const Contact = () => {
           });
 
           setTimeout(() => {
-            hideAlert(false);
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          }, [3000]);
+            hideAlert();
+            setForm({ name: "", email: "", message: "" });
+          }, 3000); // Hides the alert after 3 seconds
         },
         (error) => {
           setLoading(false);
@@ -61,6 +53,10 @@ const Contact = () => {
             text: "I didn't receive your message 😢",
             type: "danger",
           });
+
+          setTimeout(() => {
+            hideAlert();
+          }, 3000); // Hides the alert after 3 seconds
         }
       );
   };
@@ -110,7 +106,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="ex., godfredtimbers@gmail.com"
+                placeholder="ex.godfredtimbers@gmail.com"
               />
             </label>
 
@@ -128,10 +124,9 @@ const Contact = () => {
             </label>
 
             <button className="field-btn mt-8 md:mt-10 lg:mt-12" type="submit" disabled={loading}>
-  {loading ? 'Sending...' : 'Send Message'}
-  <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
-</button>
-
+              {loading ? 'Sending...' : 'Send Message'}
+              <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
+            </button>
           </form>
         </div>
       </div>
