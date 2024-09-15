@@ -24,35 +24,43 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
+    name: 'Devan Chopra',
+    position: 'Software Engineering Manager at Prodigy InfoTech',
+    img: 'assets/prodigy.png',
     review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+      "Bismark Abban's performance as an Android Development intern at Prodigy InfoTech was exceptional. He demonstrated strong work ethic, technical skills, and enthusiasm for complex projects. His attention to detail and problem-solving abilities were impressive. I highly recommend him for any future opportunities or positions.",
   },
   {
     id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
+    name: 'Beatrice Exornam Akudzi',
+    position: 'Fashion Designer',
+    img: 'assets/bernice.png',
     review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+      "I highly recommend Bismark Abban, an exceptional Full Stack Developer, UI/UX Developer, and Graphic Designer. His technical expertise and innovative approach in AI projects, coupled with his strong leadership and teamwork skills, made him an invaluable asset during our ALX AI Career Essentials Program. He has the ability to balance technical prowess with interpersonal skills, fostering collaboration and delivering high-quality results.",
   },
   {
     id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
+    name: 'Habiba Muniru',
+    position: "Manager of BEEBA'S Collection",
+    img: 'assets/habiba.png',
     review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+      "Bismark Abban is an outstanding Full Stack Developer with remarkable skills in front-end and back-end development. His technical proficiency, problem-solving ability, and collaborative nature made him an invaluable team member during the ALX AI Career Essentials Program. I highly recommend him for any full stack development opportunities, as he is sure to be a great asset.",
   },
   {
     id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
+    name: 'Gloria Attifu',
+    position: 'Sales and Marketing Specialist',
+    img: 'assets/gloria.png',
     review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+      "Bismark's exceptional IT skills, dedication, and innovative approach stood out during the ALX AI program. His roles in IT support, graphic design, and mobile app development showcase his versatility. He is also a great communicator and leader, always willing to help others and contribute to success. I highly recommend him for any IT-related roles or opportunities.",
+  },
+  {
+    id: 5,
+    name: 'Edward Amuzu',
+    position: 'President - Legon Leo Club',
+    img: 'assets/edward.png',
+    review:
+      "Bismark is an outstanding professional with a deep passion for AI. His analytical skills and ability to apply complex concepts were impressive throughout our AI Essentials course at ALX. He is a great communicator, a collaborative team player, and consistently brought valuable insights to group projects. I highly recommend him for any AI or problem-solving roles.",
   },
 ];
 
@@ -263,8 +271,8 @@ export const workExperiences = [
     name: 'Freelancer',  
     pos: 'Full Stack Developer',
     duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
+    title: "As a Full Stack Developer, I specialize in building and maintaining websites and applications. I handle both the front-end and back-end, using tools like Framer to create interactive prototypes, ensuring seamless user experiences before development.",
+    icon: '/assets/freelancer.png',
     animation: 'victory',
   },
   {
@@ -272,8 +280,8 @@ export const workExperiences = [
     name: 'Ghana Atomic Energy Commission',
     pos: 'IT Support Specialist',
     duration: '2023 - 2024',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
+    title: "During my time at Ghana Atomic Energy Commission, I provided technical support, managed IT infrastructure, and collaborated on business submissions and administrative review systems to enhance digital workflows.",
+    icon: '/assets/gaec2.png',
     animation: 'clapping',
   },
   {
@@ -281,8 +289,17 @@ export const workExperiences = [
     name: 'Ecobank PLC',
     pos: 'Marketer - Internship',
     duration: '2020 - 2021',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
+    title: "At Ecobank, I worked as a Marketer, assisting in customer engagement and outreach initiatives. I helped promote financial products while maintaining an organized workflow with tools like Notion for task tracking and project management.",
+    icon: '/assets/ecobank.png',
     animation: 'salute',
+  },
+  {
+    id: 4,
+    name: 'Prodigy Info Tech',
+    pos: 'Mobile App Developer - Internship',
+    duration: '2024',
+    title: "At Prodigy Info Tech, I contributed to mobile app development projects. I worked closely with the development team, building and refining features, and ensuring smooth functionality across multiple devices.",
+    icon: '/assets/prodigy.png',
+    animation: 'clapping',
   },
 ];
